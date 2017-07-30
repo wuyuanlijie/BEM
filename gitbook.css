@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html,body {
+  height: 100%;
+  position: relative;
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+
+}
+.container {
+}
+/*page__hd*/
+.page__hd:before {
+  content: "";
+  display: block;
+  height: 5px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #000000;
+  z-index: 2;
+}
+.page__hd {
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 1;
+}
+.page__logo {
+  display: inline-block;
+  float: left;
+  margin-top: -6px;
+  margin-left: 30px;
+}
+.page__logo img {
+  width: 50px;
+  vertical-align: middle;
+}
+.page__menu {
+  display: inline-block;
+  float: left;
+  margin-top: 37px;
+  max-width: 350px;
+}
+.page__menu .menu__item {
+  display: inline-block;
+  float: left;
+  margin-left: 35px;
+  max-width: 90px;
+  height: 38px;
+  margin-top: -29px;
+  text-align: center;
+  font-size: 16px;
+}
+.menu__item a {
+  color: rgb(119, 119, 119);
+}
+.menu__item a:hover {
+  color: #19b379;
+}
+.menu__item--active {
+  border-bottom: 5px solid #646464;
+  color: red;
+}
+.menu__item--active a {
+  color: #444444;
+}
+
+.page__hd .text-right {
+  display: inline-block;
+  float: right;
+}
+.page__search {
+  width: 180px;
+  height: 34px;
+  border: 1px solid #d1d1d1;
+  -webkit-border-radius: 20px;
+  background-color: #fff;
+  margin-right: 10px;
+  display: inline-block;
+}
+.search__form .icon {
+   display: inline-block;
+   float: left;
+   margin: 8px 0px 0px 5px;
+}
+.search__form .btn {
+  display: none;
+}
+.search__form .form__control {
+  margin-left: -18px;
+  width: 120px;
+  border: 0px;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 25px;
+  padding-left: 5px;
+  margin-left: 3px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+}
+.page__opts {
+  display: inline-block;
+  float: right;
+}
+.page__opts a {
+  display: inline-block;
+  padding: 0px 15px;
+  height: 34px;
+  line-height: 34px;
+  color: #5f6f81;
+  float: right;
+  font-size: 14px;
+  border: 1px solid #d1d1d1;
+  -webkit-border-radius: 25px;
+  margin-left: 10px;
+}
+.page__opts .user {
+  color: #19B379;
+  border: 1px solid #19B379;
+  margin-right: 10px;
+}
+
+/*page__bd*/
+.page__bd {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1060px;
+  overflow: hidden;
+}
+.stream-list {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 700px;
+  float: left;
+  display: inline-block;
+  padding-top: 50px;
+  margin-top: 22px;
+  margin-left: 25px;
+}
+.stream-list__item {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 650px;
+  border: 1px solid #f5f5f5;
+  padding: 10px 10px 25px 10px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+
+}
+.stream-list__author {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.stream-list__author img {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  vertical-align: top;
+}
+.stream-list__author .info {
+  display: inline-block;
+}
+.info span{
+  display: block;
+  font-size: 14px;
+  color: #ff9100;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.info span:nth-child(2){
+  display: block;
+  padding-top: 5px;
+  color: #8F8F8F;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  font-size: 12px;
+}
+.stream-list__author .update {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+ .stream-list__avatar {
+  margin: 0 auto;
+  max-width: 600px;
+}
+ .stream-list__avatar img {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+}
+.stream-list__title {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 36px;
+}
+.stream-list__title a {
+  color: #333333;
+}
+.stream-list__excerpt {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 18px;
+  color: #333;
+  padding-top: 10px;
+  line-height: 32px;
+  /*自动换行*/
+  word-wrap: break-word;
+}
+.stream-list__bookmark {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 10px
+}
+ .stream-list__bookmark li {
+  font-size: 12px;
+  display: inline-block;
+  color: #ccc;
+  margin-top: 8px;
+}
+.stream-list__bookmark li a {
+  color: #5f6f81;
+  margin-left: 5px;
+}
+ .stream-list__bookmark li:before{
+  width: 30px;
+  font-family: 'icomoon' !important;
+  font-weight: 400;
+  text-transform: none;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+}
+.stream-list__bookmark li:nth-child(1):before {
+  content: '\e9da';
+  color: #5F6F81;
+}
+.stream-list__bookmark li:nth-child(2):before {
+  content: '\e985';
+  color: #5F6F81;
+  margin-left: 20px;
+}
+.stream-list__bookmark li:nth-child(3):before {
+  content: '\e938';
+  margin-left: 20px;
+}
+.stream-list__bookmark .text {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  width: 68px;
+  height: 28px;
+  float: right;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+
+}
+.stream-list__bookmark .text a {
+  color: #8f8f8f;
+}
+/*加载更多*/
+.stream-list__more {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px auto 5px;
+  background-color: rgb(25, 179, 121);
+  border-radius: 2px;
+  text-align: center;
+}
+.stream-list__more-link {
+  color: rgb(221, 221, 221);
+}
+/*主题*/
+.theme-list {
+   float:left;
+   width: 360px;
+   margin-top: 90px;
+   z-index: -1;
+   height: 100%;
+   padding-bottom: 100px;
+   margin-left: 50px;
+   overflow: hidden;
+
+}
+.theme-list__title {
+    margin: 0 auto;;
+    padding-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+.theme-list ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  /*border: 1px solid #cccccc;*/
+  margin: 10px 5px 0px 0px;
+  text-align: left;
+
+}
+.theme-list ul li a {
+  border: 1px solid #f5f5f5;
+  height: 30px;
+  display: inline-block;
+  /*合理利用float：left*/
+  float: left;
+  background-color: #fff;
+  padding: 0px 10px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #777;
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3qq3qn');
+  src:  url('fonts/icomoon.eot?3qq3qn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3qq3qn') format('truetype'),
+    url('fonts/icomoon.woff?3qq3qn') format('woff'),
+    url('fonts/icomoon.svg?3qq3qn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
