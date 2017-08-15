@@ -11,7 +11,6 @@ BEM就是三个单词的缩写：Block（模块）、Element（元素）、Modif
 3. Modife修饰符，block与element上的标志，用于来表示形容他们的属性、状态、行为等等（block__--modifer）。
 
 ## 真理需要实践来检验
-
 这里就有一个网页，但是我们可以发现他们的CSS样式很混乱，基本上就div+div+dib...这样的代码看起来让人很不舒服，
 也很难去维护。所以我准备用BEM来规范它，仅供参考，不足的地方可以指出来！ <br><br>
 首先我们贴出header部分，网页的头部包含了：`logo、menu、search、opts(写作与登录)` <br>
@@ -90,7 +89,7 @@ BEM就是三个单词的缩写：Block（模块）、Element（元素）、Modif
 
 
 ## 项目地址：
-https://github.com/wuyuanlijie/gitbook_BEM
+https://github.com/wuyuanlijie/BEM
 
 改写的网页有些地方不足，大家可以指出，谢谢！共同进步！
 
