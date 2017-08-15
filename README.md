@@ -92,5 +92,5 @@ BEM优势到底体现在哪里？
 ## 项目地址：
 https://github.com/wuyuanlijie/gitbook_BEM
 
-
+改写的网页有些地方不足，大家可以指出，谢谢！共同进步！
 
