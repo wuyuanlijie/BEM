@@ -8,7 +8,7 @@
 BEM就是三个单词的缩写：Block（模块）、Element（元素）、Modifier（修饰符）。
 1. Block一个独立的实体，代表了更高级别的组件（block）;
 2. Element元素，抽象的说，就是block的后代，也就是子模块，用于形成一个完整的block整体（block__element）;
-3. Modife修饰符，block与element上的标志，用于来表示形容他们的属性、状态、行为等等（block__--modifer）。
+3. Modife修饰符，block与element上的标志，用于来表示形容他们的属性、状态、行为等等（block--modifer）。
 
 ## 真理需要实践来检验
 这里就有一个网页，但是我们可以发现他们的CSS样式很混乱，基本上就div+div+dib...这样的代码看起来让人很不舒服，
